@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+
+            background-color: black;
+
+        }
+
+        #container img {
+
+            width: 80%;
+            height: 500px;
+            margin-left: 150px;
+            margin-top: -30px;
+
+
+
+        }
+
+        #searching {
+
+
+            float: right;
+            margin-top: -80px;
+            color: white;
+        }
+
+        input {
+
+            margin: auto;
+            width: 200px;
+            margin: 10px;
+
+
+
+        }
+
+        button {
+
+            margin-right: 50px;
+            cursor: pointer;
+        }
+
+        .logosection {
+
+            width: 90vw;
+            margin: auto;
+            height: 7rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .logosection a img {
+            width: 110px;
+            height: 40px;
+            margin-top: -30px;
+            cursor: pointer;
+            margin-left: -38px;
+        }
+
+
+        p {
+
+
+            color: white;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        #movies {
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(200px);
+            /* border: 1px solid white; */
+            width: 90%;
+            margin: auto;
+            gap: 40px;
+
+
+        }
+
+        #movies>div {
+            margin-top: 80px;
+            gap: 40px;
+            padding: 50px;
+
+        }
+
+        #movies div img {
+
+            width: 100%;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="logosection">
+        <a href="movie.html"><img src="images/netflix.png"></a>
+
+    </div>
+
+
+
+    <div id="searching">
+
+        <!-- <input type="text" id="query">
+        <button onclick="searchMovies()">Search</button> -->
+
+        Search Movie <input oninput="debouncing(search,2000)" id="query">
+
+    </div>
+
+    <div id="container"></div>
+
+
+    <div id="movies"></div>
+
+</body>
+
+</html>
+
+<script src="search.js"></script>

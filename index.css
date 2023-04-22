@@ -1,0 +1,147 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+
+  width: 290px;
+  height: 38px;
+  margin: auto;
+}
+
+
+button a {
+
+  text-decoration: none;
+  color: white;
+}
+
+.WhoIsWatching {
+  background-color: #141414;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.logosection {
+
+
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logosection a img {
+  width: 125px;
+  height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-left: 45px;
+}
+
+.main-Div {
+  width: 100%;
+
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  height: auto;
+
+}
+
+.main-Div h1 {
+  font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 3.6vw;
+  font-weight: unset;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  /* margin: 40px 11vw; */
+}
+
+.choose-profile {
+  width: 105vw;
+
+  height: 31vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-link {
+  list-style-type: none;
+}
+
+.profile-icon {
+  margin: 10px 14px;
+}
+
+.profile-icon img {
+  width: 138px;
+  height: 135px;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-icon img:hover {
+  border: 0.2em solid white;
+
+}
+
+li {
+  list-style-type: none;
+}
+
+.profile-name {
+  line-height: 1.2em;
+  font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  min-height: 1.8em;
+  color: grey;
+  display: block;
+  text-align: center;
+  font-size: 1.3vw;
+  margin: 0.6em 0;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profile-name:hover {
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: transparent;
+  color: grey;
+  width: 210px;
+  height: 6vh;
+  border: 1px solid grey;
+
+  margin: 60px 0px;
+  font-size: 1.2vw;
+
+  margin-left: 40px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid white;
+}
